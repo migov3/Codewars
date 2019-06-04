@@ -1,0 +1,16 @@
+package spinWords;
+
+public class SpinWords {
+	  public String spinWords(String sentence) {
+		    //TODO: Code stuff here
+		    char[] a = sentence.toCharArray();
+		    int cont=0;
+		    if(sentence.length()>=5){
+		    for(int i=sentence.length();i>0;i--){
+		      a[cont]=sentence.substring(i-1,i).charAt(0);
+		      cont++;
+		    }
+		  sentence=new String(a);
+		  }return sentence;
+		}
+}

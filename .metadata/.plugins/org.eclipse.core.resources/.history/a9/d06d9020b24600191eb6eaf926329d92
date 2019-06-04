@@ -1,0 +1,23 @@
+package spinWords;
+
+public class SpinWords {
+	public static void main (String args[]) {
+		System.out.println(spinWords("Welcome home"));
+	}
+	public static String spinWords(String sentence) {
+		char[] a = sentence.toCharArray();
+		char[] b = new char[sentence.length()];
+		for(int i = 0; i < sentence.length(); i++) {
+			String sub;
+			if(sentence.indexOf(" ") != -1) sub = sentence.substring(i, sentence.indexOf(" "));
+			else sub = sentence;
+			int x = 0;
+			for(int j = sub.length()-1; j>=0; j--) {
+				b[x] = 
+			}
+			
+		}
+		String res = new String(b);
+		return res;
+	}
+}

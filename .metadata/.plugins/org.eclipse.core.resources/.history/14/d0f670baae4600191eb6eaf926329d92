@@ -1,0 +1,12 @@
+package spinWords;
+
+public class SpinWords {
+	public static void main (String args[]) {
+		System.out.println(spinWords("Welcome"));
+	}
+	public static String spinWords(String sentence) {
+		char[] a = sentence.toCharArray();
+		
+		return null;
+	}
+}

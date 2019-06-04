@@ -1,0 +1,19 @@
+package spinWords;
+
+public class SpinWords {
+	public static void main (String args[]) {
+		System.out.println(spinWords("Welcome"));
+	}
+	public static String spinWords(String sentence) {
+		char[] a = sentence.toCharArray();
+		char[] b = new char[sentence.length()-1];
+		int x = 0;
+		for(int i = sentence.length()-1; i>0; i--) {
+			b[x] = a[i];
+			x++;
+		}
+		b[x] = a[sentence.length()-2];
+		String res = new String(b);
+		return res;
+	}
+}

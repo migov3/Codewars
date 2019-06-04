@@ -1,0 +1,22 @@
+package integerSquareRoot;
+
+public class integerSquareRoot {
+
+	public static void main(String[] args) {
+		String n = "23232328323215435345345345343458098856756556809400840980980980980809092343243243243243098799634"; //458
+		System.out.println(integerToSquareRoot(n));
+	}
+
+	public static String integerToSquareRoot(String n) {
+		String res;
+		if(n.length() < 19) res = String.valueOf((int)Math.sqrt(Double.parseDouble(n)));
+		else {
+			res = n.substring(0, 16);
+			float root = (float)Math.floor(Math.sqrt(Long.parseLong(res)));
+			res = String.valueOf(root * Math.pow(10, n.length()));
+		}
+		return res;
+	}
+}
+//9223372036854123
+//9223372036854123
